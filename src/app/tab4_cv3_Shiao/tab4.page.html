@@ -1,17 +1,62 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab 4
+      Curriculum vitae
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 4</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding ion-text-center">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Roberto Li Fong Shiao Morales</ion-card-title>
+      <ion-card-subtitle>DESARROLLADOR JUNIOR, CURSANDO SUS ESTUDIOS EN LA ESCUELA POLITÉCNICA
+        NACIONAL</ion-card-subtitle>
+    </ion-card-header>
 
-  <app-explore-container name="Tab 4 page"></app-explore-container>
+    <ion-card-content>
+      <ion-avatar class="ion-margin-bottom">
+        <img src="../../assets/shiaoProfile.png" alt="Profile Image" class="profile-img">
+      </ion-avatar>
+      <ion-list lines="full">
+        <ion-item>
+          <ion-icon name="mail-outline" slot="start"></ion-icon>
+          <ion-label>Roberto.shiao@epn.edu.ec</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="call-outline" slot="start"></ion-icon>
+          <ion-label>+593 0960449696</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="location-outline" slot="start"></ion-icon>
+          <ion-label>Quito, Ecuador</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="technology-card">
+    <ion-card-content>
+      <h2 class="card-title">Tecnologías</h2>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="4" *ngFor="let technology of technologies">
+          <img [src]="technology.icon" alt="{{ technology.alt }}">
+          <span>{{ technology.name }}</span>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="technology-card">
+    <ion-card-content>
+      <h2 class="card-title">Herramientas</h2>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="4" *ngFor="let desiredTechnology of desiredTechnologies">
+          <img [src]="desiredTechnology.icon" alt="{{ desiredTechnology.alt }}">
+          <span>{{ desiredTechnology.name }}</span>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
