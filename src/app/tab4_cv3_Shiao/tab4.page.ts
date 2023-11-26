@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab4',
@@ -18,8 +19,18 @@ export class Tab4Page {
 
   desiredTechnologies = [
     { icon: 'https://media-asgard.s3.eu-west-1.amazonaws.com/22/04/05/7c25acbb-fbb9-42f4-aef5-9b95c0b09e5e_visual-studio-code_i.svg', alt: 'vscode', name: 'vscode' },
+    { icon: 'https://media-asgard.s3.eu-west-1.amazonaws.com/22/05/10/331caaf2-2bee-43b6-9972-9860a54ee5ec_jupyter_icon.png', alt: 'jupyter', name: 'jupyter' },
+    { icon: 'https://media-asgard.s3.eu-west-1.amazonaws.com/22/03/25/7bc05f02-b353-4672-a36a-a2499bfc6ce8_pycharm.svg', alt: 'Pycharm', name: 'Pycharm' },
     
   ];
-  constructor() { }
+  constructor(private alertController: AlertController) { }
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: 'Proyectos',
+      message: 'GitHub >> <a href="https://github.com/Shiao-Li" target="_blank">Shiao-Li</a>',
+      buttons: ['Ok'],
+    });
 
+    await alert.present();
+  }
 }
