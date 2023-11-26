@@ -1,17 +1,103 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 3
+    <ion-title class="ion-text-center">
+      Hoja de Vida - Elvis Guanoluisa
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding ion-text-center">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>BackEnd | PHP | Laravel</ion-card-subtitle>
+    </ion-card-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <ion-card-content>
+      <ion-row class="ion-justify-content-center">
+        <ion-avatar >
+          <img src="../../assets/code.png" alt="Profile Image">
+        </ion-avatar>
+      </ion-row>
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size-sm="6" size-md="3" size-lg="3">
+            <ion-item button href="https://www.linkedin.com/in/elvis-guanoluisa/">
+              <ion-icon name="logo-linkedin" slot="start"></ion-icon>
+              <ion-label>Visita mi LinkedIn</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col size-sm="6" size-md="3" size-lg="3">
+            <ion-item>
+              <ion-icon name="call-outline" slot="start"></ion-icon>
+              <ion-label>+593 0988815272</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col size-sm="6" size-md="3" size-lg="3">
+            <ion-item button href="https://elvissoide.github.io">
+              <ion-icon name="logo-github" slot="start"></ion-icon>
+              <ion-label>Visita mi portafolio</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col size-sm="6" size-md="3" size-lg="3">
+            <ion-item>
+              <ion-icon name="mail-outline" slot="start"></ion-icon>
+              <ion-label>elviserock@gmail.com</ion-label>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      
+      
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="studies-card">
+    <ion-card-content>
+      <h2 class="card-title">ESTUDIOS</h2>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="12">
+          <p>Certificado inglés avanzado 2 - CEC</p>
+          <p>Tecnología Superior en Software - EPN</p>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  
+
+  <ion-card class="experience-card">
+    <ion-card-content>
+      <h2 class="card-title">EXPERIENCIA</h2>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="12">
+          <p>Freelance - 3 meses</p>
+          <p>Tecnologías: HTML, CSS, JavaScript</p>
+        </ion-col>
+        <ion-col size="12">
+          <p>Sovos - 7 meses</p>
+          <p>Tecnologías: PHP, Laravel, SQL, CodeIgniter</p>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card class="skills-card">
+    <ion-card-content>
+      <h2 class="card-title">LENGUAJES Y HERRAMIENTAS</h2>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="12">
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JavaScript</p>
+          <p>PHP</p>
+          <p>Git</p>
+          <p>GitHub</p>
+          <p>VSCode</p>
+          <p>Confluence</p>
+          <p>Jira</p>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  
+
 </ion-content>
